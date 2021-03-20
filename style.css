@@ -1,0 +1,13 @@
+.bg-image {
+    background-image:url(./photos/bg-puppy.jpg)
+}
+
+.text-border {
+    border-left: 10px;
+    border-left-style: solid;
+    border-left-color: teal;
+    max-height: 5rem;
+    padding-left: 2rem;
+}
+
+    
