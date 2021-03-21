@@ -8,12 +8,13 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
     <title>Checkpoint 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header-fluid-container .bg-info">
-        <!-- Image and text -->
+    <div class="header-fluid-container .bg-info sticky-top">
 <nav class="navbar navbar-light bg-info">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -57,7 +58,7 @@
             </div>
             <button class = "m-3" type="submit" class="btn btn-primary">Submit</button>
         </div>
-          <div class="text-border my-5 d-none d-md-block">
+          <div class="text-border my-5 d-none d-md-block text-light">
           <h1><strong>TEXT OVER IMAGE</strong></h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos esse sapiente inventore debitis est repellendus.</p>
         </div>
@@ -65,17 +66,23 @@
     </div>
 </div>
 <div class="row bg-info d-flex justify-content-around">
-    <div class="col-5">
+    <div class="col-md-5 order-2 order-md-1">
         <div class="row">
-            <div class="col flex-column justify-content-center">
-                <h4>Lorem ipsum dolor sit amet.</h4>
-                <h4>Lorem, ipsum dolor.</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, ea!</p>
+            <div class="col flex-column justify-content-center py-5 px-2">
+                <div class="">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                </div>
+                <div>
+                    <h4>Lorem, ipsum dolor.</h4>
+                </div>
+                <div class="py-5">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, ea!</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col-4">
-        <div class="card" style="transform: translate(10px,60px);">
+    <div class="col-md-4 order-1 order-md-2">
+        <div class="card card-bleed">
             <ul class="list-group list-group-flush m-3">
                 <div>
               <li class="list-group-item">
@@ -112,10 +119,10 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-4 d-flex justify-content-center my-5">
+    <div class="col-md-4 d-flex justify-content-center my-5">
         <img class="img-thumbnail mb-3" src="./photos/image-1.jpg" alt="">
     </div>
-    <div class="col-8 py-5 my-5">
+    <div class="col-md-8 py-5 my-5">
         <div class="d-flex align-items-center">
             <i class="fab fa-accessible-icon px-3"></i>
             <h1>Lorem ipsum dolor sit amet.</h1>
@@ -128,54 +135,51 @@
     </div>
 </div>
 <div class="row bg-dark d-flex align-items-center">
-    <div class="col">
+    <div class="col order-2 order-md-1">
                 <div class="card m-5">
                     <div class="card-body">
                         <h5 class="card-title"></h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi minima dolorum similique reprehenderit repudiandae aliquam eum dolorem neque necessitatibus.</p>
+                        <p>Lorem, ipsum.!</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
         </div>
-    <div class="col">
-      <div class="card m-5"  style="height:20rem";>
+    <div class="col order-1 order-md-2">
+      <div class="card top-card m-5"  style="height:20rem";>
         <div class="card-body">
           <h5 class="card-title d-flex justify-content-around">
             <i class="fas fa-address-book"></i>
             <i class="fas fa-address-book"></i>
             <i class="fas fa-address-book"></i>
           </h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo ullam deserunt velit doloribus, voluptas voluptatem beatae odio tempora saepe eveniet!</p>
+          <p>Lorem, ipsum.!</p>
+          <p>Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col order-3 order-md-3">
       <div class="card m-5">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi minima dolorum similique reprehenderit repudiandae aliquam eum dolorem neque necessitatibus.</p>
+            <p>Lorem, ipsum.!</p>
+            <p>Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
     </div>
 </div>
-<div class="row bg-info">
-    <div class="col">
-<h1>Lorem ipsum dolor sit amet.</h1>
-<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, iste!</h5>
+<div class="row bg-info flex-column justify-content-start">
+    <div class="col bg-light py-2 m-5" style="max-width: fit-content;">
+            <h1>Lorem ipsum dolor sit amet.</h1>
     </div>
-</div>
+        <div class="col bg-light py-2 m-5" style="max-width: fit-content;">
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem sit tenetur iusto minus dolore cumque reprehenderit, totam iste alias!</h5>
+        </div>
     </div>
-    <div class="footer-fluid-container">
+    <div class="footer-fluid-container d-flex justify-content-center">
         <div class="row">
-            <div class="col">
+            <div class="col m-2 p-5">
 <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, omnis.</h4>
             </div>
         </div>
